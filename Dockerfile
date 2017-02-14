@@ -17,6 +17,7 @@ RUN pip install pyserial
 RUN git clone git://git.drogon.net/wiringPi
 RUN cd wiringPi && ./build
 RUN pip install wiringpi2
+RUN pip install -r requirements.txt
 
 # Define working directory
 WORKDIR /data
